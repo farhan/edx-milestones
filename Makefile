@@ -33,7 +33,7 @@ selfcheck: ## check that the Makefile is well-formed
 	@echo "The Makefile is well-formed."
 
 test: ## run unit tests
-	python -Wd -m pytest
+	python -Wd -m pytest $(PYTEST_ARGS)
 	coverage report -m
 	coverage xml
 
